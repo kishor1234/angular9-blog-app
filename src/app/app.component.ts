@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+  flags: boolean = false;
+  flag: string = "";
+  
+  public api: string = "http://pest.lcl/";
+  onTogalChange() {
+    this.flags == true ? this.flag = "active" : this.flag = "";
+  }
 }

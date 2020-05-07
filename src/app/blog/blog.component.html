@@ -1,0 +1,15 @@
+<section class="">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-12 " *ngIf='success'>
+        <h1 class="mb-3">{{success["0"].title}}</h1>
+        <p>
+          <img src="{{apiURL}}/{{success[0].img}}" alt="" class="img-fluid">
+        </p>
+        <div [innerHTML]="viewContent"></div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
